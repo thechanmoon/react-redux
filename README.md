@@ -1,5 +1,5 @@
-### vanila-redux
-
+### Vanilla Redux => React Redux
+ 
 * Install
 ```shell
 npm install
