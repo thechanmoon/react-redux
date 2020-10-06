@@ -1,7 +1,16 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import App from "./component/App"
-ReactDOM.render(<App></App>,document.getElementById("root"));
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./component/App";
+import { Provider } from "react-redux";
+import store from "./store";
+
+ReactDOM.render(
+    <Provider store={store}>
+    <App></App>
+    </Provider>,
+    document.getElementById("root")
+);
+
 // import { createStore } from 'redux'
 
 // const form = document.querySelector('form')
