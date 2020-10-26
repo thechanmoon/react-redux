@@ -17,7 +17,8 @@ const deleteToDo = id => {
     }
 }
 
-const reducer = (state = [{tiburon: 'special'}], action) => {
+// const reducer = (state = [{text: 'special',id:Date.now()}], action) => {
+const reducer = (state = [], action) => {
     switch (action.type){
         case ADD:
             return [{text: action.text, id:Date.now()},...state];
