@@ -80,11 +80,12 @@ console.log(toDos);
 console.log(toDos.actions);
 
 // const store = createStore(reducer);
-const store = configureStore({reducer: toDos.reducer});
+// const store = configureStore({reducer: toDos.reducer});
 
 // export const actionCreators = {
 //     addToDo,
 //     deleteToDo
 // }
 export const { add, remove } = toDos.actions;
-export default store;
+// export default store;
+export default configureStore({reducer: toDos.reducer});
